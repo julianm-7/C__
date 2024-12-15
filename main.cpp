@@ -4,7 +4,7 @@ using namespace std;
 
 int function(int, int);
 
-
+void delimiter(char , int);
 
 int main() {
 
