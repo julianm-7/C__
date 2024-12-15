@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+void tupleebil(int& x, int * e);
 int function(int, int);
 
 void delimiter(char , int );
@@ -25,7 +25,11 @@ int main() {
     } else {
         printf("z is less than 10");
     }
-    cout<<endl;
+    int* e = new int;
+    *e = 10;
+    cout << "e: " << &e;
+    tupleebil(x ,e);
+    cout<<"x: " << x;
     delimiter(string[0],x);
     printf("%s", buffer);
     cout<<endl;
@@ -46,4 +50,7 @@ void delimiter(char f, int x){
     }
     cout << f<<endl;
 }
-
+void tupleebil(int& x, int * e){
+    x = 20;
+    *e = x; cout << "x: " << x << endl << "e: " << *e<<endl;
+}
