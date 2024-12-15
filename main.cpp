@@ -4,10 +4,11 @@ using namespace std;
 
 int function(int, int);
 
-void delimiter(char , int);
+void delimiter(char , int );
 
 int main() {
-
+    char string[3];
+    string [0] = 'h';
     printf("hi");
     cout<<endl;
     std::cout<<"Hello, World!"<<std::endl;
@@ -25,7 +26,7 @@ int main() {
         printf("z is less than 10");
     }
     cout<<endl;
-    describeResult(z);
+    delimiter(string[0],x);
     printf("%s", buffer);
     cout<<endl;
     printf("%d", z);
@@ -37,5 +38,12 @@ int function(int x, int y) {
     int z = x * y;
     printf("hello\n");
     return z;
+}
+
+void delimiter(char f, int x){
+    if (x>1){
+        f = 'h';
+    }
+    cout << f<<endl;
 }
 
